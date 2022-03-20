@@ -1,0 +1,67 @@
+body {
+    background-image: url(./../jpg/b1.jpg);
+    background-size: 100vw 100vh;
+}
+
+.bc {
+    margin-top: -10%;
+    margin-left: 20%;
+}
+
+.title p {
+    font-size: 45px;
+    margin-top: 8%;
+    text-align: center;
+}
+
+ul {
+    font-size: 50px;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.center {
+    text-align: center;
+    background-color: rgb(219, 93, 188);
+    border-radius: 20px;
+    width: 350px;
+    height: 70px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+li div {
+    padding: 2em 0 5 2em;
+    width: 2em;
+    height: 1em;
+    border: solid 10px rgb(255, 255, 255);
+    border-radius: 1em;
+    color: rgb(0, 0, 0);
+    transition: all 1s ease-in-out;
+    font-size: 40px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover div {
+    width: 8.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: rgb(161, 58, 230);
+}
+
+footer {
+    position: absolute;
+    margin-top: -5%;
+    margin-right: 10%;
+    font-size: 10;
+    opacity: 0.5;
+}

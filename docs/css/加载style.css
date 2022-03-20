@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./../jpg/b1.jpg);
+    background-size: 100vw 100vh;
+}
+
+.pic {
+    position: absolute;
+    align-content: center;
+    background-image: url(./../jpg/蓝色圆形墨迹水墨[1633x1775].png);
+    background-size: 500px 500px;
+}
+
+.loader {
+    margin-top: 200%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    background-image: url(./../jpg/蓝色圆形墨迹水墨[1633x1775].png);
+    background-size: 180px 180px;
+    background-repeat: no-repeat;
+}
+
+.loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(0, 4, 255);
+    pointer-events: none;
+    animation: animate 5s linear infinite;
+}
+
+.loader span:nth-child(1) {
+    border-radius: 38% 62% 64% 36% / 43% 35% 65% 57%;
+}
+
+.loader span:nth-child(2) {
+    animation-direction: reverse;
+    border-radius: 41% 59% 40% 60% / 65% 66% 34% 35%;
+}
+
+.loader span:nth-child(3) {
+    animation-duration: 3s;
+    border-radius: 73% 27% 56% 44% / 57% 74% 26% 43%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(252, 0, 76);
+    font-weight: 500;
+}

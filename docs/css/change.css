@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./../jpg/b1.jpg);
+    background-size: 100vw 200vh;
+}
+
+.social button {
+    display: block;
+    font-size: 45px;
+    background-color: #ccc;
+    width: 300px;
+    height: 65px;
+    line-height: 60px;
+    margin-left: 50px;
+    font-size: 14px;
+    text-indent: 0em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 0.98;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    position: relative;
+    width: 1200px;
+    height: 360px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#container .parent {
+    position: absolute;
+    width: 6000px;
+    height: 360px;
+}
+
+#container .parent li {
+    float: left;
+    width: 1200px;
+    height: 100%;
+}
+
+#container .parent li img {
+    width: 100%;
+    height: 100%;
+}
+
+#container .btnLeft,
+#container .btnRight {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 20%;
+    opacity: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 20px;
+    color: #f40;
+    text-align: center;
+    line-height: 30px;
+    opacity: 0.75;
+}
+
+#container .btnLeft {
+    left: 10px;
+    opacity: 0.3;
+}
+
+#container .btnRight {
+    right: 10px;
+    opacity: 0.3;
+}
+
+#container .btnLeft:hover,
+#container .btnRight:hover {
+    opacity: 90%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#container .modal {
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+#container .modal .dots {
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    left: 1000px;
+}
+
+#container .modal .dots li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.on {
+    background-color: rgb(30, 255, 0);
+    opacity: 0.5;
+}
+
+.off {
+    background-color: gray;
+}
+
+.social button:visited {
+    color: rgb(0, 0, 0);
+}
+
+.social button:hover {
+    background-color: rgb(255, 81, 0);
+}
+
+.social button:active {
+    color: palegreen;
+}
+
+.social {
+    margin-left: 5%;
+}
+
+footer {
+    height: 15%;
+    height: 200px;
+}
+
+.social .non {
+    height: 300px;
+    width: 300px;
+    background-color: #ccc;
+    opacity: 0;
+}
+
+.main {
+    margin-left: 2%;
+    width: 1000px;
+    height: auto;
+    background-color: #ccc;
+    opacity: 0.3;
+}
+
+p {
+    text-indent: 2rem;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.all {
+    height: 50vh;
+    display: flex;
+}
+
+h6 {
+    opacity: 0.5;
+    font-size: 20;
+    margin-right: 25%;
+}

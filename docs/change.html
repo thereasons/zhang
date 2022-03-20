@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/change.css">
+    <meta charset="utf-8">
+    <title>Change</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>welcome!</h1>
+        </div>
+        <div id="container">
+            <ul class="parent" style="left: 0;">
+                <li><img src="./jpg/p1.jpeg"></li>
+                <li><img src="./jpg/p2.jpeg"></li>
+                <li><img src="./jpg/p3.jpeg"></li>
+                <li><img src="./jpg/p4.jpeg"></li>
+                <li><img src="./jpg/p5.jpeg"></li>
+            </ul>
+
+            <div class="btnLeft">&lt;</div>
+            <div class="btnRight">&gt;</div>
+            <div class="modal">
+                <div class="dots">
+                    <ul class="clearfix">
+                        <li class="on"></li>
+                        <li class="off"></li>
+                        <li class="off"></li>
+                        <li class="off"></li>
+                        <li class="off"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <hr>
+        <h6>PS:以下区域使用jQuery的Ajax用以回答问题，但尚未解决跨域问题（查资料也没弄清楚），若不能正常显示请使用vscode的live sever打开</a>（期待正常使用...）
+        </h6>
+        <h6>实在不行直接打开文件看吧（哎嘿，在json里面）</h6>
+    </div>
+    <div class="all">
+        <div class="social">
+            <button id="btn1">什么是HTTP?什么是TCP？</button>
+            <button id="btn2">cookie和session</button>
+            <button id="btn3">前端coding时使用HTTP与服务端进行交互</button>
+            <button id="btn4">VUE或者reactJS框架以及MVVM模型</button>
+            <button id="btn5">输入一个 url，前端经历过程</button>
+        </div>
+        <div class="main" id="main">
+        </div>
+    </div>
+    <footer></footer>
+    <script type="text/javascript" src="./javascript/jquery-3.6.js" charset="utf-8"></script>
+
+    <script type="text/javascript" src="./javascript/change.js" charset="utf-8"></script>
+
+
+</body>
+
+</html>
