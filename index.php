@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <head>
@@ -24,6 +25,31 @@
                 </ul>
         </div>
     </div>
+    <?php
+$next =  '<br><hr><br>';
+echo $next ;
+$username = 'test' ;
+$password = '123456';
+$dsn = 'mysql:dbname=hello;host=localhost;port=3306';
+$pdo = new PDO($dsn,$username,$password);
+$find = $pdo->prepare('select * from scoreplus');
+$find->execute();
+$arr = $find->fetchAll();
+$arr_v = 0 ;
+for(;$arr_v < 5 ;$arr_v++){
+    echo "  代号是:".$arr[$arr_v]['number']    ;
+    echo "  姓名:".$arr[$arr_v]['name']   ;
+    echo "  数学成绩：".$arr[$arr_v]['math']   ;
+    echo "  语文成绩：".$arr[$arr_v]['chinese']   ;
+    echo "  英语成绩：".$arr[$arr_v]['english']   ;
+    echo "  总分：".$arr[$arr_v]['total']   ;
+    echo $next;
+}
+    
+
+//$pdo->query('SET NAMES utf-8');
+
+?>
     <footer>
         <h3>Producer:<abbr title="come from 0907">张钊荣</abbr></h3>
         <address>Address:2774118939@qq.com</address>
